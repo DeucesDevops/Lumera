@@ -1,0 +1,22 @@
+import { PropsWithChildren } from "react";
+import { ScrollView, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+
+type ScreenProps = PropsWithChildren<{
+  scroll?: boolean;
+  className?: string;
+}>;
+
+export function Screen({ children, scroll = true, className = "" }: ScreenProps) {
+  return (
+    <SafeAreaView className={`flex-1 bg-linen ${className}`} edges={["top"]}>
+      {scroll ? (
+        <ScrollView className="flex-1" contentContainerClassName="px-5 pb-32" showsVerticalScrollIndicator={false}>
+          {children}
+        </ScrollView>
+      ) : (
+        <View className="flex-1 px-5 pb-8">{children}</View>
+      )}
+    </SafeAreaView>
+  );
+}

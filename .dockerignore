@@ -1,0 +1,15 @@
+node_modules
+**/node_modules
+dist
+**/dist
+coverage
+**/coverage
+.git
+.expo
+.expo-shared
+ios
+android
+*.log
+.env
+.env.*
+!.env.example

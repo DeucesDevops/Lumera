@@ -1,0 +1,28 @@
+{
+  "name": "lumera",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:api": "pnpm --filter @lumera/api dev",
+    "dev:mobile": "pnpm --filter @lumera/mobile start",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "db:generate": "pnpm --filter @lumera/db db:generate",
+    "db:migrate": "pnpm --filter @lumera/db db:migrate",
+    "db:studio": "pnpm --filter @lumera/db db:studio",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down",
+    "docker:db": "docker compose up -d postgres"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "typescript": "~5.9.2"
+  }
+}

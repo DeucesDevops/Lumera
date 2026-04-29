@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Workspace
+apps/*/pnpm-lock.yaml
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+.turbo/
+.expo/
+.expo-shared/
+coverage/
+
+# Native / Expo
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
