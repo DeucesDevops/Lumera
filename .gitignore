@@ -13,6 +13,7 @@ apps/*/pnpm-lock.yaml
 .env.production
 .env.staging
 .env.*.local
+.env.example
 
 # Build outputs
 dist/
