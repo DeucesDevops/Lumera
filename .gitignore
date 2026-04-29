@@ -7,8 +7,12 @@ apps/*/pnpm-lock.yaml
 
 # Environment
 .env
-.env.*
-!.env.example
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+.env.*.local
 
 # Build outputs
 dist/
